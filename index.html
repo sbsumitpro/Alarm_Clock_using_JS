@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>My Alarm Clock</title>
+</head>
+<body>
+    <main>
+        <div class="clock-container">
+            <h1 class="current-time">Current Time</h1>
+            <form method="post" action="">
+                <div class="set-alarm-container">
+                    <div class="alarm-time-inputs">
+                        <input type="number" name="hour" id="hour" min="0" max="12" value="00" required>
+                        <input type="number" name="minute" id="minute" value="00" min="0" max="60" required>
+                        <input type="number" name="second" id="second" min="0" max="60" value="00">
+                        <select name="AMPM" id="AMPM">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                    <button id="set-alarm" type="submit">Set Alarm</button>
+                </div>
+            </form>
+
+            <h2>Alarms</h2>
+            <div class="alarm-list">
+                <ul class="alarm-time-container">
+         <!-- // This is the place where HTML <Li> </Li> elemement is getting injected dynamically -->
+                    <!-- <li>
+                        <div class="alarm-time">
+                            <span>02:54:00 PM</span>
+                            <button type="submit">Delete</button>
+                        </div>
+                    </li> -->
+
+                </ul>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="./src/script.js"></script>
+</body>
+</html>

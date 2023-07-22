@@ -1,0 +1,97 @@
+body{
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container{
+    height: 350px;
+    width: 300px;
+    border: 15px double grey;
+    border-style:ridge;
+    border-radius: 60px;
+    padding:10px;
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+}
+
+.clock-container h1{
+    text-align: center;
+}
+
+
+/* Set alarm section */
+
+.set-alarm-container{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.alarm-time-inputs{
+    width: 70%;
+}
+
+.alarm-time-inputs input {
+    width: 16%;
+    height: 20px;
+    font-size: 16px;
+}
+
+.alarm-time-inputs select{
+    width: 24%;
+    font-size: 16px;
+    height: 25px;
+
+}
+
+#set-alarm{
+    font-size: 16px;
+    padding: 3px;
+    background-color: aliceblue;
+}
+
+/* list of alarm section */
+
+.alarm-list{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 50px;
+    justify-content: space-around;
+    height: 50%;
+    overflow: scroll;
+}
+
+.alarm-list li{
+    list-style: none;
+    margin-left: 0px;
+}
+
+ul{
+    padding:0 5px 0 5px;
+}
+
+.alarm-time{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 0 50px 2px black; */
+    height: 100%;
+    width: 100%;
+    margin-bottom: 5px;
+
+}
+
+.alarm-time span{
+    font-size: 1.2rem;
+}
